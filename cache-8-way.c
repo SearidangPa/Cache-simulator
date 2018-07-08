@@ -78,7 +78,7 @@ void replace(int entry, int tag){
 }
 //return the tag of a memory address
 int getTag(u_int64_t x){
-  x=x >>12; //15 because entry and offset takes 9+6=15 bits
+  x=x >>12; 
   u_int64_t mask = 0xffffff;
   int tag = x & mask;
   return tag;
